@@ -1,0 +1,11 @@
+<ul>
+    <li *ngFor="let liste of listes">
+        {{liste | uppercase}}
+        <button (click)="supprimer(liste)" class="btn btn-danger m-2"> supprimer</button>
+
+    </li> 
+</ul>
+
+<input type="text" [(ngModel)]="item" class="ms-3">
+
+<button (click)="ajouter()" class="btn btn-primary ms-5"> ajouter</button> 
